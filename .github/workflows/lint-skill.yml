@@ -1,0 +1,48 @@
+name: Lint Skill
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  lint-skill-md:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate SKILL.md frontmatter
+        run: |
+          echo "Checking SKILL.md exists..."
+          test -f SKILL.md || (echo "::error::SKILL.md not found" && exit 1)
+
+          echo "Checking required frontmatter fields..."
+          required_fields=("name:" "description:" "version:" "license:")
+
+          for field in "${required_fields[@]}"; do
+            if ! grep -q "^$field" SKILL.md; then
+              echo "::error::Missing required frontmatter field: $field"
+              exit 1
+            fi
+          done
+
+          echo "SKILL.md frontmatter validation passed!"
+
+  lint-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Markdown files
+        run: |
+          echo "Checking all Markdown files for basic syntax..."
+
+          # Check for empty frontmatter in .md files (but allow .md.template)
+          for file in $(find . -name "*.md" -not -path "./.git/*"); do
+            if ! head -1 "$file" | grep -q "^---$"; then
+              echo "::warning::$file: first line should be --- (frontmatter start)"
+            fi
+          done
+
+          echo "Markdown check complete!"
