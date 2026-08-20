@@ -51,4 +51,4 @@ agent_hint: "执行前先读全文；claim 后再动手"
 - 遗留问题：
 
 ---
-*创建于 {YYYY-MM-DD}，触发 skill：任务中转站（制定者角色）*
+*创建于 {YYYY-MM-DD}，触发 skill：Agent 任务中转站（制定者角色）*

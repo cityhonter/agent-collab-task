@@ -1,6 +1,6 @@
 ---
 name: 功能请求
-about: 为「任务中转站」提新功能
+about: 为「Agent 任务中转站」提新功能
 title: '[Feature] '
 labels: enhancement
 assignees: ''

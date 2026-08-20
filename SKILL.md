@@ -1,7 +1,7 @@
 ---
 name: zhongzhuan-task
-display_name: 任务中转站
-description: 双角色跨平台 agent 协作协议 —— 通过 Obsidian vault 中的"中转层"目录，让多个 AI agent（WorkBuddy、Cursor、Claude Code、ChatGPT、任何能读文件的 agent）协作完成同一组任务，不重复、不遗漏、不撞车。
+display_name: Agent 任务中转站
+description: 双角色跨平台 agent 协作协议 —— 通过中转层目录（推荐放在 Obsidian vault 内，便于可视化编辑），让多个 AI agent（WorkBuddy、Cursor、Claude Code、ChatGPT、任何能读文件的 agent）协作完成同一组任务，不重复、不遗漏、不撞车。
 version: 2.0.0
 license: MIT
 author: cityhonter（cityhonter）
@@ -10,9 +10,9 @@ keywords: [obsidian, multi-agent, task-management, knowledge-base, ai-agents]
 config_required: true
 ---
 
-# 任务中转站（Zhongzhuan Task）
+# Agent 任务中转站（Agent Collab Task）
 
-> 双角色跨平台 agent 协作协议 —— 用 Obsidian vault 作为共享状态，让多个 AI agent 接力完成同一组任务。
+> 双角色跨平台 agent 协作协议 —— 用中转层目录作为共享状态（推荐用 Obsidian 打开），让多个 AI agent 接力完成同一组任务。
 
 ---
 

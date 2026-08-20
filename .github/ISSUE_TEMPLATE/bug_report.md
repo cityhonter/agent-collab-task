@@ -1,6 +1,6 @@
 ---
 name: Bug 报告
-about: 报告「任务中转站」使用中遇到的问题
+about: 报告「Agent 任务中转站」使用中遇到的问题
 title: '[Bug] '
 labels: bug
 assignees: ''

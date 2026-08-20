@@ -1,4 +1,4 @@
-# 任务中转站 (Zhongzhuan Task)
+# Agent 任务中转站 (Agent Collab Task)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](CHANGELOG.md)
@@ -6,7 +6,7 @@
 
 > 双角色跨平台 agent 协作协议 —— 让多个 AI agent 接力完成同一组任务。
 
-通过约定一个 **Obsidian vault 中的"中转层"目录**，让任何能读 Markdown 文件的 AI agent（不限平台）协作完成同一组任务，不重复、不遗漏、不撞车。
+通过约定一个 **中转层目录**（推荐放在 Obsidian vault 内），让任何能读 Markdown 文件的 AI agent（不限平台）协作完成同一组任务，不重复、不遗漏、不撞车。
 
 ---
 
@@ -30,8 +30,8 @@
 
 ### 1. 准备工作
 
-- 一个 **Obsidian vault**（任意位置）
-- 在 vault 内创建"中转层"目录（默认 `~/Documents/中转层/`）
+- 一个本地文件夹（推荐放在 Obsidian vault 内）
+- 创建"中转层"目录（推荐放在 Obsidian vault 内）（默认 `~/Documents/中转层/`）
 
 ### 2. 复制协议文件
 

@@ -1,6 +1,6 @@
 # 配置文件示例
 
-> 本文件展示「任务中转站」skill 的所有可配置项。
+> 本文件展示「Agent 任务中转站」skill 的所有可配置项。
 >
 > 实际配置文件位置：`~/.zhongzhuan-task/config.json`
 
